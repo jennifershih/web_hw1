@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>在 CSS 中常見的邊框 (border) 屬性有以下幾種：</p>
+<ul>
+	<li>border-style</li>
+	<li>border-width</li>
+	<li>border-color</li>
+	<li>border-top-, border-left-, border-bottom-, border-right-</li>
+	<li>border</li>
+</ul>
+	<li>
+		<a href="#border"></a>
+		<a name="borderstyle"></a>
+
+	<h1>border-style</h1>
+	<p><b>border-style</b>屬性指定邊框的樣式。以下的表格列出這個屬性可能有的值，以及每一個值顯現出來的結果。</p>
+	<table border="0" cellpadding="5" cellpadding="5">
+	<tbody>
+		<tr>
+			<td>
+				<p>CSS 樣式</p>
+			</td>
+			<td>
+				<p>顯示結果</p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-style:solid;}</p>
+			</td>
+			<td><p>實線</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-style:dashed;}</p>
+			</td>
+			<td><p>虛線</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-style:double;}</p>
+			</td>
+			<td><p>雙線</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-style:dotted;}</p>
+			</td>
+			<td><p>點線</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-style:groove;}</p>
+			</td>
+			<td><p>凹線</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-style:ridge;}</p>
+			</td>
+			<td><p>凸線</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-style:inset;}</p>
+			</td>
+			<td><p>嵌入線</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-style:outset;}</p>
+			</td>
+			<td><p>浮出線</p></td>
+		</tr>
+	</tbody>
+	</table>
+
+	<h2>border-width</h2>
+	<p><b>border-width</b>屬性是用來設定邊框的寬度。可用的值為 thin (薄)、medium (中等)、thick (厚)，或是一個數字。</p>
+	<table>
+	<tbody>
+		<tr>
+			<td>
+				<p>CSS 樣式</p>
+			</td>
+			<td><p>顯現結果</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-width:9px; border-style:solid;}</p>
+			</td>
+			<td><p>邊框寬度為 9px</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-width:medium; border-style:dashed;}</p>
+			</td>
+			<td><p>邊框寬度為中等</p></td>
+		</tr>
+	</tbody>
+	</table>
+
+	<h3>border-color</h3>
+	<p><b>border-color</b>屬性是用來設定邊寬的顏色。</p>
+	<p>舉例如下：</p>
+	<table>
+	<tbody>
+		<tr>
+			<td>
+				<p>CSS 樣式</p>
+			</td>
+			<td><p>顯現結果</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-color:#0000FF; border-style:solid;}</p>
+			</td>
+			<td><p>藍色邊框</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-color:red; border-style:dotted;}</p>
+			</td>
+			<td><p>紅色邊框</p></td>
+		</tr>
+	</tbody>
+	</table>
+
+	<h4>border-top-, border-left-, border-bottom-, border-right-</h4>
+	<p>我們可以將方向 (top - 上、bottom - 下、left - 左、right - 右) 和樣式、寬度、及顏色合起來而成為一個屬性。舉例來說， <b>border-top-style</b> 屬性就是用來設定上邊框的樣式。 以下舉幾個例子：</p>
+	<table>
+	<tbody>
+		<tr>
+			<td>
+				<p>CSS 樣式</p>
+			</td>
+			<td><p>顯現結果</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-top-style:solid; border-bottom-style:dotted;}</p>
+			</td>
+			<td><p>例1：上邊框為實線，下邊框為點線</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-top-style:solid; border-top-width:medium;}</p>
+			</td>
+			<td><p>例 2：上邊框為實線，且寬度中等</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {border-left-style:solid; border-bottom-style:dashed; 
+border-bottom-color:#00FF00;}</p>
+			</td>
+			<td>
+				<p>例3：左邊框為實線，下邊框為虛線，且顏色為綠色</p>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<h5>border</h5>
+	<p>若四邊的邊框屬性都一樣，那我們可以用一個 <b>border</b> 屬性來描述，而不必四個邊都描述一次。另外，我們可以在同一行一次宣告邊框樣式、邊框寬度、以及邊框顏色。</p>
+	<p>舉例來說，若我們有以下的 CSS 碼，</p>
+	<table border="0" width="300" class="main" cellpadding="10">
+				<tbody>
+					<tr>
+						<td bgcolor="DDDDDD">
+						<p>p { </p>
+						<p>border:#0000FF 5px solid; </p>
+						<p>}</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+	<p>那以下的 HTML，</p>
+	<p>
+		<table border="0" class="main-content" cellpadding="10">
+			<tbody>
+				<tr>
+					<td bgcolor="DDDDDD">
+					<p>用一行來宣佈所有邊框的屬性</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</p>
+	<p>會顯現出</p>
+	<p style="border: #0000FF 5px solid;">用一行來宣佈所有邊框的屬性</p>
+
+</body>
+</html>

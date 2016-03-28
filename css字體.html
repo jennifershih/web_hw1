@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>在 CSS 中常見的字體 (font) 屬性有以下幾種：</p>
+<ul>
+	<li>font-family</li>
+	<li>font-size</li>
+	<li>font-weight</li>
+	<li>font-style</li>
+	<li>font-variant</li>
+</ul>
+	<li>
+		<a href="#border"></a>
+		<a name="borderstyle"></a>
+	<p>每一個屬性在以下會有詳細地介紹：</p>
+
+	<h1>font-family</h1>
+	<p><b>font-family</b>屬性是用來設定字體的類別。</p>
+	<table border="1" cellspacing="0" = cellpadding="5" class="main-content">
+	<tbody>
+		<tr>
+			<td><p>CSS 樣式</p></td>
+			<td><p>顯示結果</p></td>
+		</tr>
+		<tr>
+			<td><p>p {font-family: verdana;}</p></td>
+			<td><p>Font Family Verdana.</p></td>
+		</tr>
+		<tr>
+			<td><p>p {font-family: arial;}</p></td>
+			<td><p>Font Family Arial.</p></td>
+		</tr>
+		<tr>
+			<td><p>p {font-family: impact;}</p></td>
+			<td><p>Font Family Impact.</p></td>
+		</tr>
+	</tbody>
+	</table>
+	<a name="size"></a>
+
+	<h2>font-size</h2>
+	<p><b>font-size</b>屬性是用來設定字體的大小。大小可以是以數字顯現 (絕對的或是相較的均可)，或是以下其中之一的值："xx-large"、 "x-large"、 "large"、 "medium"、 "small"、 "x-small"、和 "xx-small"。</p>
+	<table border="1" cellspacing="0" = cellpadding="5" class="main-content">
+	<tbody>
+		<tr>
+			<td>
+				<p>CSS 樣式</p>
+			</td>
+			<td><p>顯現結果</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {font-size:9px;}</p>
+			</td>
+			<td><p>字體大小為 9px。</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {font-size:150%;}</p>
+			</td>
+			<td><p>字體大小為 150%。</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {font-size:0.8cm;}</p>
+			</td>
+			<td><p>字體大小為 0.8 cm。</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {font-size:small;}</p>
+			</td>
+			<td><p>字體大小為 small。</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {font-size:large;}</p>
+			</td>
+			<td><p>字體大小為 large。</p></td>
+		</tr>
+	</tbody>
+	</table>
+
+	<h3>font-weight</h3>
+	<p><b>font-weight</b>屬性是用來設定字體的厚度。厚度的設定值可以從 100 到 900 (900 是最厚的)。另外，我們也可以將厚度設定為 bold (厚)、bolder (更厚)、及 normal (正常)。</p>
+	<p>以下舉幾個例子：</p>
+	<table border="1" cellspacing="0" = cellpadding="5" class="main-content">
+	<tbody>
+		<tr>
+			<td>
+				<p>CSS 樣式</p>
+			</td>
+			<td><p>顯現結果</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {font-weight: 100;}</p>
+			</td>
+			<td><p>這是厚度 100。</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {font-weight: 900;}</p>
+			</td>
+			<td><p>這是厚度 900。</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {font-weight: bold;}</p>
+			</td>
+			<td><p>這是 bold 厚度。</p></td>
+		</tr>
+
+	</tbody>
+	</table>
+
+	<h4>font-style</h4>
+	<p><b>font-style </b>屬性是用來設定字體是否為斜體字 (italic 或 oblique)。</p>
+	<table border="1" cellspacing="0" = cellpadding="5" class="main-content">
+	<tbody>
+		<tr>
+			<td>
+				<p>CSS 樣式</p>
+			</td>
+			<td><p>顯現結果</p></td>
+		</tr>
+		<tr>
+			<td>
+				<p>p {font-style: italic;}</p>
+			</td>
+			<td><p>這是斜體字。</p></td>
+		</tr>
+	</tbody>
+	</table>
+
+	<h5>font-variant</h5>
+	<p><b>font-variant</b>屬性是用來設定文字是不是要以小型大寫 (small caps) 字體顯現。在小型大寫字體中，所有的字母都是大寫，可是字體是比一般大寫來得小。可能的值為 "small-caps" 和 "normal"。來看下面的例子：</p>
+	<p>CSS 宣告，</p>
+	<table border="0" width="300" class="main" cellpadding="10">
+				<tbody>
+					<tr>
+						<td bgcolor="DDDDDD">
+						<p>span { </p>
+						<p>font-variant:small-caps; </p>
+						<p>}</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+	<p>以下的 HTML 碼，</p>
+	<p>
+		<table border="0" width="400" class="main" cellpadding="10">
+			<tbody>
+				<tr>
+					<td bgcolor="DDDDDD"><span>initial in small caps</span> AND LATER IN LARGE CAPS.</td>
+				</tr>
+			</tbody>
+		</table>
+	</p>
+	<p>就會顯現出，</p>
+		<table border="0" width="400" class="main-content" cellpadding="10">
+			<tbody>
+				<tr>
+					<td bgcolor="CCFFCC">
+					<p>initial in small caps AND LATER IN LARGE CAPS.</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+</body>
+</html>

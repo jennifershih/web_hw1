@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Div</h1>
+		<p>Div 這個標籤目的是將內容分為不同的區域，而每一個區域可以根據 CSS 中的宣告而有自己的樣式。Div 是一個區塊級容器 (block-level container)，這代表</div>標籤後會換行。</p>
+		<p>舉例來說，如果我們有以下的 CSS 樣式：</p>
+			<table border="0" width="300" class="main" cellpadding="10">
+				<tbody>
+					<tr>
+						<td bgcolor="DDDDDD">
+						<p>.large { </p>
+						<p>color: #00FF00; </p>
+						<p> font-family:arial; </p>
+						<p> font-size: 4pt; </p>
+						<p>}</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<p>以下的 HTML 碼，</p>
+
+		<p>就會顯現為，</p>
+		<p><font face="Arial"; size="4pt;" color="00FF00"> 這是 DIV 範例。</font></p>
+
+	<h2>Span</h2>
+		<p>Span 跟 Div 類似的地方是，這兩個標籤的目的都是將內容分為不同的區域。不同的是，Span 可以涵蓋更細層的元素。所以，我們甚至可以用 <span> 來調整單一文字的樣式。另外，在 </span> 之後並不會換行。</p>
+		<p>舉例來說，如果我們有以下的 CSS 樣式：</p>
+		<p>
+			<table border="0" width="300" class="main" cellpadding="10">
+				<tbody>
+					<tr>
+						<td bgcolor="DDDDDD">
+						<p>.largefont{  </p>
+						<p>color: #0066FF;</p>
+						<p>font-family:arial;</p>
+						<p>font-size: 6px;</p>
+						<p>}</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<p>以下的 HTML 碼，</p>
+		<td bgcolor="DDDDDD"></td>
+		<p>Span 不是<span class="largefont">區塊級的</span>.</p>
+
+		<p>就會顯現為，</p>
+		<p>Span 不是<font face="Arial"; size="6px;" color="0066FF">區塊級的</font></p>
+
+
+
+
+
+</body>
+</html>

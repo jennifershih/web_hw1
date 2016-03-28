@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p>在 CSS 中常見的位置 (position) 屬性有以下幾種：</p>
+<ul>
+	<li>position</li>
+	<li>top</li>
+	<li>right</li>
+	<li>left</li>
+	<li>bottom</li>
+	<li>overflow</li>
+	<li>z-index</li>
+</ul>
+	<li>
+		<a href="#border"></a>
+		<a name="borderstyle"></a>
+
+	<h1>position</h1>
+	<p><b>position</b>屬性制定出要用哪一類的位置。可能的值有：</p>
+	<ul>
+		<li>
+			<b>static(預設值)</b>: 這代表元素會被放在預設的地方。如果 position 的值是被設定為 statics 的話，那 top、bottom、left、和 right 的值就都沒有意義了。</li>
+		<li><b>absolute</b>: 這代表元素會被放在瀏覽器內的某個位置 (依 top、bottom、left、和 right 的值而定)。當使用者將網頁往下拉時，元素也會跟著改變位置。</li>
+		<li><b>relative</b>: 這代表元素被放的地方將會與預設的地方有所不同。不同的程度是依照 top、bottom、left、和 right 的值而定。</li>
+		<li><b>fixed</b>: 這代表元素會被放在瀏覽器內的某個位置 (依 top、bottom、left、和 right 的值而定)。當使用者將網頁往下拉時，元素的位置不會改變。</li>
+	</ul>
+
+	</tbody>
+	</table>
+	<a name="size"></a>
+
+	<a name="top"></a>
+	<h2>top, right, bottom, left</h2>
+	<p>每一個方向<b>(top, right, bottom, left)</b>的位置值可以是長度、百分比、或是 auto。</p>
+	<p>讓我們來看個例子：</p>
+	<p>CSS 碼：</p>
+			<table border="0" width="300" class="main" cellpadding="10">
+				<tbody>
+					<tr>
+						<td bgcolor="DDDDDD">
+						<p>div { </p>
+						<p>background-color:#FF00FF; </p>
+						<p>width:500px; </p>
+						<p>height:60px; </p>
+						<p>}</p>
+						<p>p { </p>
+						<p>position:relative; </p>
+						<p>top:10px; </p>
+						<p>left:50px; </p>
+						<p>}</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+	<p>在這哩，以下的 HTML 碼，</p>
+	<div> 
+  <p>舉例文字。 
+</div>
+
+	<p>會顯示出，</p>
+	<div style="background-color:#FF00FF; width: 90%;height: 60px">舉例文字。</div>
+	<p>請注意以上文字的位置：它是在離粉紅色方塊上面 10px，及左邊 50px 的地方。</p>
+
+
+	<h3>overflow</h3>
+	<p><b>overflow</b>屬性是用來設定當內容放不下時的處理方式。可能的值包括：</p>
+	<ul>
+		<li><b>visible</b>: 內容完全呈現，不管放得下放不下。</li>
+		<li><b>hidden</b>: 放不下的內容就不顯示出來。</li>
+		<li><b>scroll</b>: 無論內容放得下放不下，都加入上下捲軸及左右捲軸的功能。</li>
+		<li><b>auto</b>: 當內容放不下時，加上捲軸的功能。</li>
+	</ul>
+	
+	<p>以上這四個值的例子如下：</p>
+
+	<h4>z-index</h4>
+	<p><b>z-index</b>屬性是用來決定元素重疊的順序。換言之，當兩個元素有重疊的情況時，z-index 值將會決定哪一個元素在上面。z-index 值比較大個元素會被放在上面。</p>
+	<p>舉例來說，假設我們有以下的 CSS 碼：</p>
+	<table border="0" width="300" class="main" cellpadding="10">
+				<tbody>
+					<tr>
+						<td bgcolor="DDDDDD">
+						<p>#redblock { </p>
+						<p>z-index: 1; </p>
+						<p>position: </p>
+						<p>absolute; </p>
+						<p>width:80px; </p>
+						<p>height:100px; </p>
+						<p>top:20px; </p>
+						<p>left:20px; </p>
+						<p>border: 1px solid #FFF; </p>
+						<p>background-color: #FF0000; </p>
+						<p>}</p>
+						<p>#pinkblock { </p>
+						<p>z-index: 2; </p>
+						<p>position: absolute; </p>
+						<p>width:100px; </p>
+						<p>height:80px; </p>
+						<p>top:50px; </p>
+						<p>left:50px; </p>
+						<p>border: 1px solid #FFF; </p>
+						<p>background-color: #FF00FF; </p>
+						<p>}</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+	<p>以下的 HTML 碼，</p>
+	<p>
+		<table border="0" width="400" class="main" cellpadding="10">
+			<tbody>
+				<tr>
+					<td bgcolor="DDDDDD"><div id="redblock"></div> 
+<div id="pinkblock"></div></td>
+				</tr>
+			</tbody>
+		</table>
+	</p>
+	<p>會顯示出，</p>
+	<p>從以上可見，粉紅色方塊 (pinkblock) 的 z-index 值 (2) 比紅色方塊 (redblock) 的 z-index 值 (1) 高，因此粉紅色方塊在上面。</p>
+
+</body>
+</html>
